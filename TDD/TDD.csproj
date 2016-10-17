@@ -37,6 +37,10 @@
       <HintPath>..\packages\Autofac.4.1.1\lib\net45\Autofac.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="AutofacSerilogIntegration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutofacSerilogIntegration.1.0.12\lib\portable45-net45+win8+wp8+wpa81\AutofacSerilogIntegration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ConfigInjector, Version=2.2.1175.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ConfigInjector.2.2.1175.0\lib\net45\ConfigInjector.dll</HintPath>
       <Private>True</Private>
@@ -88,7 +92,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutofacModules\ConfigurationModule.cs" />
+    <Compile Include="AutofacModules\LoggerModule.cs" />
     <Compile Include="IoC.cs" />
+    <Compile Include="LogBootstrapper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
